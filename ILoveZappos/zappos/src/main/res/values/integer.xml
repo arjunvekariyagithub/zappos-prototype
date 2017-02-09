@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="grid_view_column_count">2</integer>
+    <integer name="large_view_column_count">1</integer>
+
+    <integer name="grid_item_placeholder_text_size">45</integer>
+    <integer name="large_item_placeholder_text_size">55</integer>
+
+    <integer name="icon_size_menu_item">24</integer>
+</resources>

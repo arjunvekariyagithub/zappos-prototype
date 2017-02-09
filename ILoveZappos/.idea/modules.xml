@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ILoveZappos.iml" filepath="$PROJECT_DIR$/ILoveZappos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zappos/zappos.iml" filepath="$PROJECT_DIR$/zappos/zappos.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_7c71926aa4c0c44476a559887c7cb0a426ac0f12/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_06e928764be7a4c38e382fb9f3b2175feb5aaee7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_525ddeac713648d8e5515002dde5ad60afbe2fb4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_73db2b5f8f70ffc5494cd422f828684501d9a172/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.databinding/adapters/1.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-adapters-1.2.1_f6ac295686b3a521eea22b799013df565fc52601/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e25dd9fb660b6cfc7998400b5e10e83a770f71f8">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0aa83158a6898486f784b58b40d6e2288fe00dfb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.github.ivbaranov/materiallettericon/0.2.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="59db32d9126fba9f61ed68d8eebe3edfd89194a3">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ivbaranov-materiallettericon-0.2.2_272ed0aa37113df44e09484bc5daad8f39afb739/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_845270f8626f3e78212834f3edfd63e7eed87bdb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_d00044f2babeba39e3f5f562cb5bb8cca930d5e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_5df95d9b92dc52e4e6cb76f0f485f695ed34f323/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_f773cdac2a9a00404c32301260ad2ceb7ed7f3e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_32f107be4d710a8c93c0eb6021945df19c66b9ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.1_a0b279ff18e83a5b98f621c4aa1aa8a4b8caa65d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.github.jorgecastilloprz/fabprogresscircle/1.01/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9abc58346d8519a4be59cdf0f9fe3eb52dd9c8ac">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.jorgecastilloprz-fabprogresscircle-1.01_996cc2cc6294da924aef321c68e29ed71a40f93b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_e82d54ac5b5ebec913fb71b83b828dfc7301121d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.databinding/library/1.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.databinding-library-1.2.1_db43388fb4c9c7b41165e6dd0f11202413389a17/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.0.2_cf2e8761c53422949c52641fe4bdaa7b7563b2db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.2/43eeae0b9fb087bb3194ba59ab63a38a32fbf3e/retrofit-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.2_3062b497595d0fdb7970c55423146a0950163073/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_5fe82a377d33f75c71b86a0ca5f4740d29043cbb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.daimajia.slider/library/1.1.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.daimajia.slider-library-1.1.5_df8639d33f8321d621c65b8b039c9143866aca50/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/transition/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.1_6aed4f5a49fff9a235af4cb430dd9ae874312546/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="497e86b54c60dc5437b40f49e24d6c621286ada2">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_37bc8b5ddbabd74dcff59a9ec98edf996af54754/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.2.1/d6f54d76edfbe779a50a8636b10fd3f555d8f780/butterknife-annotations-8.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6f54d76edfbe779a50a8636b10fd3f555d8f780">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.2.1_1b18169d9d0acd65fa887ad2c1a2b39109d1bb16/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_bda9a0dbf12849178f3151387e7b5a23d67a6c2f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Softwares/Development-Tools/SDK/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_f015024b8cef9fd0753a48549f1e4756fbe16785/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.2/f1bc476cc167b18e66c297df599b2377131a8947/gson-2.6.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.6.2_2c552d48941c6dc1569833241d0c2e8adb1c00aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.1_762b06178717f3a0b1a3394c2827139d09bea6c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca5e58104f56f918f0fb3a5b1b371ab599ae56b2">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.2.1_2eec5aae0a18dd3205fd8f7603955e346d88fa34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/library-2.4.0_1bb74ca75883e99f5d18b2c07bddee392c197581/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Softwares/Development-Tools/Android-Studio/android-studio/gradle/m2repository/com/android/databinding/baseLibrary/2.2.3/baseLibrary-2.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/baseLibrary-2.2.3_6d21df2fade4e17c849fc694440cf2deff86f151/classes.dex" />
+    </item>
+
+</items>

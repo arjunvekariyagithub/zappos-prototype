@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+    <dimen name="activity_margin_quarter">4dp</dimen>
+    <dimen name="fab_margin">9dp</dimen>
+
+    <!-- grid view -->
+    <dimen name="grid_view_margin_left">10dip</dimen>
+    <dimen name="grid_view_margin_right">10dip</dimen>
+    <dimen name="grid_view_margin_top">10dip</dimen>
+    <dimen name="grid_view_text_in_between_margin">3dip</dimen>
+    <dimen name="grid_view_text_layout_margin_left">10dip</dimen>
+    <dimen name="grid_view_text_price_in_between_margin">3dip</dimen>
+    <dimen name="grid_view_thumb_height">200dip</dimen>
+    <dimen name="grid_view_checkbox_height_width">30dip</dimen>
+    <dimen name="grid_view_title_text_size">10dip</dimen>
+    <dimen name="grid_view_brand_text_size">8dip</dimen>
+    <dimen name="grid_view_price_text_size">11dip</dimen>
+    <dimen name="grid_view_original_price_text_size">8dip</dimen>
+    <dimen name="grid_view_percent_off_text_size">12dip</dimen>
+    <dimen name="grid_view_horizontal_spacing">10dip</dimen>
+    <dimen name="grid_view_vertical_spacing">8dip</dimen>
+    <dimen name="grid_view_placeholder_size">50dip</dimen>
+    <dimen name="grid_view_placeholder_bg_size">52dip</dimen>
+    <dimen name="grid_view_icon_fav_margin">8dip</dimen>
+
+    <!-- large view -->
+    <dimen name="large_item_thumb_height">350dip</dimen>
+    <dimen name="large_item_margin">2dip</dimen>
+    <dimen name="large_item_title_text_top_margin">5dip</dimen>
+    <dimen name="large_item_title_text_size">13dip</dimen>
+    <dimen name="large_item_brand_text_size">12dip</dimen>
+    <dimen name="large_item_price_text_size">13dip</dimen>
+    <dimen name="large_item_original_price_text_size">9dip</dimen>
+    <dimen name="large_item_percent_off_text_size">15dip</dimen>
+    <dimen name="large_item_text_layout_margin_left">5dip</dimen>
+    <dimen name="large_item_text_price_in_between_margin">3dip</dimen>
+    <dimen name="large_item_placeholder_size">60dip</dimen>
+    <dimen name="large_item_placeholder_bg_size">62dip</dimen>
+    <dimen name="large_item_icon_fav_margin">10dip</dimen>
+    <dimen name="large_item_button_add_to_cart_height">30dip</dimen>
+    <dimen name="large_item_button_add_to_cart_padding">5dip</dimen>
+    <dimen name="large_item_button_add_to_cart_text_size">12dip</dimen>
+
+    <!-- floating list position -->
+    <dimen name="float_list_pos_margin_top">15dp</dimen>
+    <dimen name="float_list_pos_padding">11dp</dimen>
+    <dimen name="float_list_pos_text_search_term_max_width">100dip</dimen>
+    <dimen name="float_list_pos_text_search_term_margin_left">5dip</dimen>
+    <dimen name="float_list_pos_text_total_items_margin_left">10dp</dimen>
+
+    <!-- cart -->
+    <dimen name="add_to_cart_progress_arc_width">7dp</dimen>
+    <dimen name="menu_cart_badge_text_width">19dp</dimen>
+    <dimen name="menu_cart_badge_text_margin_right">7dp</dimen>
+    <dimen name="menu_cart_badge_text_margin_top">5dp</dimen>
+    <dimen name="menu_cart_badge_text_size">11dp</dimen>
+
+    <!-- navigation bar -->
+    <dimen name="nav_header_layout_user_info_margin_bottom">5dp</dimen>
+    <dimen name="nav_header_text_user_info_margin_top">2dp</dimen>
+
+
+
+
+</resources>

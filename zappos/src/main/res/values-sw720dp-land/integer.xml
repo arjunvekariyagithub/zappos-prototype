@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="grid_view_column_count">3</integer>
+    <integer name="large_view_column_count">3</integer>
+
+    <integer name="icon_size_menu_item">16</integer>
+    
+</resources>

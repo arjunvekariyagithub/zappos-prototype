@@ -47,22 +47,32 @@ import butterknife.BindView;
  * {@link Fragment} holding {@link RecyclerView}, error view and loading view.*
  */
 public class ProductListFragment extends Fragment implements HomeActivity.FragmentNotifier,
-        DataHandler.DataListener, SearchView.OnQueryTextListener, RecyclerViewScrollListener.ScrollPositionListener {
+        DataHandler.HomeDataListener, SearchView.OnQueryTextListener, RecyclerViewScrollListener.ScrollPositionListener {
     private static final String TAG = ProductListFragment.class.getSimpleName();
 
     private static final int MSG_ADD_TO_CART = 100;
-    public static int cartItemCount = 0;
-    public static int currentSliderPos = -1;
-    public static boolean isStarting = false;
+    private static boolean isStarting = false;
     private static String searchTerm = "Adidas";
+
     @BindView(R.id.recycler_view)
     public RecyclerView mRecyclerView;
-    public Handler mHandler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-        }
-    };
-    List<ProductInfo> mProductInfoList;
+
+    private View mRoot = null;
+    private ProductListFragment mThisFragment;
+    private Context mContext;
+    private ProgressBar mProgressBar;
+    private LinearLayout mErrorLayout;
+    private Button mBtnRetry;
+    private TextView mTextError;
+    private LinearLayout mListPosLayout;
+    private TextView mListPosTextSearchTerm;
+    private TextView mListPosTextPosition;
+    private TextView mListPosTextItemCount;
+    private ProductListAdapter mProductAdapter;
+    private SearchView search;
+    private Menu mMenu;
+
+    private List<ProductInfo> mProductInfoList;
     private int mGlobalLayoutWidth;
     /**
      * Global layout change listener to handle view change during Keyboard show and hide.
@@ -89,20 +99,12 @@ public class ProductListFragment extends Fragment implements HomeActivity.Fragme
             }
         }
     };
-    private View mRoot = null;
-    private ProductListFragment mThisFragment;
-    private Context mContext;
-    private ProgressBar mProgressBar;
-    private LinearLayout mErrorLayout;
-    private Button mBtnRetry;
-    private TextView mTextError;
-    private LinearLayout mListPosLayout;
-    private TextView mListPosTextSearchTerm;
-    private TextView mListPosTextPosition;
-    private TextView mListPosTextItemCount;
-    private ProductListAdapter mProductAdapter;
-    private SearchView search;
-    private Menu mMenu;
+    private Handler mHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+        }
+    };
+
 
     public ProductListFragment() {
         mThisFragment = this;
@@ -141,7 +143,7 @@ public class ProductListFragment extends Fragment implements HomeActivity.Fragme
     public void onResume() {
         super.onResume();
         ((HomeActivity) getActivity()).registerFragmentNotifier(this);
-        DataHandler.getInstance().setDataListener(this);
+        DataHandler.getInstance().setHomeDataListener(this);
 
         if (isStarting) {
             isStarting = false;
@@ -452,6 +454,11 @@ public class ProductListFragment extends Fragment implements HomeActivity.Fragme
             mMenu.findItem(R.id.action_view_as).setIcon(mContext.getResources().getDrawable(R.drawable.ic_menu_list));
         }
         updateListView();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
     }
 
     @Override

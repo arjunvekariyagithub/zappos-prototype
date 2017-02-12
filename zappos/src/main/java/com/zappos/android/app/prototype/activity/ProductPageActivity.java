@@ -58,23 +58,23 @@ public class ProductPageActivity extends AppCompatActivity
 
     public static RelativeLayout selectedStylesRowLayout = null;
     public static FABProgressCircle mFABProgressCircle;
-    public static int cartItemCount = 0;
+    private static int cartItemCount = 0;
+
     @BindView(R.id.recycler_view_recommend_products)
     public RecyclerView mRecyclerViewRecommendProducts;
-
     @BindView(R.id.recycler_view_styles)
     public RecyclerView mRecyclerViewStyles;
-
     @BindView(R.id.recycler_view_size)
     public RecyclerView mRecyclerViewProductSize;
-    public TextView mSelectedSizeLayout = null;
-    public FloatingActionButton mFAB;
-    public View mCartBadgeLayout;
-    public TextView mCartBadgeText;
-    public ImageView mCartMenuButton;
-    public int mSelectedStylePos = 0;
-    public int mSelectedSizePos = 0;
-    ArrayList<ImageInfo> mStylePairImageList = new ArrayList<ImageInfo>();
+
+    private TextView mSelectedSizeLayout = null;
+    private FloatingActionButton mFAB;
+    private View mCartBadgeLayout;
+    private TextView mCartBadgeText;
+    private ImageView mCartMenuButton;
+    private int mSelectedStylePos = 0;
+    private int mSelectedSizePos = 0;
+    private ArrayList<ImageInfo> mStylePairImageList = new ArrayList<ImageInfo>();
     private Context mContext;
     private CustomPagerAdapter mCustomPagerAdapter;
     private CustomViewPager mViewPager;
@@ -526,9 +526,18 @@ public class ProductPageActivity extends AppCompatActivity
     }
 
     @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
+        DataHandler.getInstance().setProductDetailsListener(null);
+
+        // making static objects null to avoid memory leaks.
         selectedStylesRowLayout = null;
+        mFABProgressCircle = null;
     }
 
     /**

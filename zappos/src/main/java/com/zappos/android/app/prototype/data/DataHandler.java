@@ -31,9 +31,9 @@ import retrofit2.Response;
 public class DataHandler {
     private static final String TAG = ProductListFragment.class.getSimpleName();
     private static DataHandler sInstance = null;
-    public ApiInterface mApiService;
-    public DataListener mDataListener;
-    public ProductDetailsListener mProductDetailsListener;
+    private ApiInterface mApiService;
+    private HomeDataListener mHomeDataListener;
+    private ProductDetailsListener mProductDetailsListener;
 
     public DataHandler() {
         mApiService = ApiClient.getClient().create(ApiInterface.class);
@@ -47,8 +47,8 @@ public class DataHandler {
         return sInstance;
     }
 
-    public void setDataListener(DataListener listener) {
-        mDataListener = listener;
+    public void setHomeDataListener(HomeDataListener listener) {
+        mHomeDataListener = listener;
     }
 
     public void setProductDetailsListener(ProductDetailsListener listener) {
@@ -79,8 +79,8 @@ public class DataHandler {
             public void onResponse(Call<SearchResponse> call, Response<SearchResponse> response) {
                 int statusCode = response.code();
                 if (statusCode == 200) {
-                    if (mDataListener != null)
-                        mDataListener.onDataResponse(response.body().getResults());
+                    if (mHomeDataListener != null)
+                        mHomeDataListener.onDataResponse(response.body().getResults());
                 }
             }
 
@@ -94,7 +94,8 @@ public class DataHandler {
             @Override
             public void onFailure(Call<SearchResponse> call, Throwable t) {
                 Log.e(TAG, t.toString());
-                mDataListener.onRequestFailure(t);
+                if (mHomeDataListener != null)
+                    mHomeDataListener.onRequestFailure(t);
             }
         });
     }
@@ -141,7 +142,6 @@ public class DataHandler {
             @Override
             public void onFailure(Call<ProductImagesResponse> call, Throwable t) {
                 Log.e(TAG, t.toString());
-                mDataListener.onRequestFailure(t);
             }
         });
     }
@@ -187,7 +187,6 @@ public class DataHandler {
             @Override
             public void onFailure(Call<SimilarProductsResponse> call, Throwable t) {
                 Log.e(TAG, t.toString());
-                mDataListener.onRequestFailure(t);
             }
         });
     }
@@ -231,12 +230,19 @@ public class DataHandler {
             @Override
             public void onFailure(Call<SingleProductResponse> call, Throwable t) {
                 Log.e(TAG, t.toString());
-                mDataListener.onRequestFailure(t);
             }
         });
     }
 
-    public interface DataListener {
+    private void unRegisterProductDetailsListener() {
+        mProductDetailsListener = null;
+    }
+
+    private void unRegisterHomeDataListener() {
+        mHomeDataListener = null;
+    }
+
+    public interface HomeDataListener {
 
         /**
          * Called when data is successfully fetched from server.

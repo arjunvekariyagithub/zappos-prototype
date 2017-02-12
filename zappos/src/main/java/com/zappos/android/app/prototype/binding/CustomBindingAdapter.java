@@ -2,6 +2,7 @@ package com.zappos.android.app.prototype.binding;
 
 import android.databinding.BindingAdapter;
 import android.graphics.Paint;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.CheckBox;
@@ -20,7 +21,7 @@ import com.zappos.android.app.prototype.utils.Utils;
 
 /**
  * Created by arjun on 2/3/17.
- *
+ * <p>
  * {@link BindingAdapter} for list item data binding.
  */
 
@@ -29,20 +30,19 @@ public class CustomBindingAdapter {
     /**
      * Customized binding method for loading product thumbnails into {@link ImageView}.
      * Using Glide library to handle image loading.
-     *
+     * <p>
      * Since default '*t-THUMBNAIL.jpg' thumbnail is too small, I have used type 'PAIR' thumbnails
      * with '4x' resolution. I have experimented by retrieving images for different products with
      * url 'http://api.zappos.com/Image?productId=8076430&styleId=2079337' and realized that
      * '*-p-4x.jpg' images are available for almost every product present in zappos database,
      * hence using '*p-4x.jpg' images for thumbnails in this demo app.
-     *
+     * <p>
      * For some rare products '*p-4x.jpg' may not be available but for demo purpose I am making
      * assumption that it is available for all products.
      *
-     * @see Utils#getLargeThumbUrl(String)
-     *
      * @param imageView image view to load thumbnails into
-     * @param url url for thumbnail of particular product
+     * @param url       url for thumbnail of particular product
+     * @see Utils#getLargeThumbUrl(String)
      */
     @BindingAdapter("bind:imageUrl")
     public static void loadImage(final ImageView imageView, String url) {
@@ -74,7 +74,7 @@ public class CustomBindingAdapter {
     /**
      * Customized binding method to set {@link TextView} visibility based on percentOff value.
      *
-     * @param textView text view for which visibility is to be set
+     * @param textView   text view for which visibility is to be set
      * @param percentOff discount percentage value
      */
     @BindingAdapter("bind:visibilityOnPercentOff")
@@ -91,9 +91,9 @@ public class CustomBindingAdapter {
      * Customized binding method to set {@link TextView} visibility based on percentOff value.
      * Also strikes out original price text if discount is available.
      *
-     * @param textView text view for which visibility is to be set
+     * @param textView      text view for which visibility is to be set
      * @param originalPrice product original price
-     * @param percentOff discount percentage value
+     * @param percentOff    discount percentage value
      */
 
     @BindingAdapter({"bind:originalPrice", "bind:visibilityOnPercentOff"})
@@ -109,6 +109,7 @@ public class CustomBindingAdapter {
 
     /**
      * Customized binding listener to be called when favourite view state is changed
+     *
      * @param view
      */
     public void onFavouriteChanged(View view) {
@@ -123,6 +124,10 @@ public class CustomBindingAdapter {
             );
             animatorSet.start();
         }
+    }
 
+    public void onClickSizeText(View textView) {
+        Log.d("Zappos", "onClickSizeText() - " + textView.isSelected());
+        ((TextView) textView).setSelected(!textView.isSelected());
     }
 }

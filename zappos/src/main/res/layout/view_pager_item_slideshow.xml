@@ -1,46 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_centerInParent="true">
+    <data>
 
-    <com.github.ivbaranov.mli.MaterialLetterIcon
-        android:layout_width="@dimen/large_item_placeholder_bg_size"
-        android:layout_height="@dimen/large_item_placeholder_bg_size"
-        android:layout_centerInParent="true"
-        android:visibility="visible"
-        app:mli_initials="false"
-        app:mli_initials_number="1"
-        app:mli_letter=""
-        app:mli_letter_color="@color/letter_color"
-        app:mli_letter_size="@integer/large_item_placeholder_text_size"
-        app:mli_letters_number="1"
-        app:mli_shape_color="@color/letter_color"
-        app:mli_shape_type="circle" />
+        <import type="com.zappos.android.app.prototype.models.ImageInfo" />
+
+        <variable
+            name="imageInfo"
+            type="ImageInfo" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:layout_width="@dimen/large_item_placeholder_bg_size"
+            android:layout_height="@dimen/large_item_placeholder_bg_size"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:mli_initials="false"
+            app:mli_initials_number="1"
+            app:mli_letter=""
+            app:mli_letter_color="@color/letter_color"
+            app:mli_letter_size="@integer/large_item_placeholder_text_size"
+            app:mli_letters_number="1"
+            app:mli_shape_color="@color/letter_color"
+            app:mli_shape_type="circle" />
 
 
-    <com.github.ivbaranov.mli.MaterialLetterIcon
-        android:layout_width="@dimen/large_item_placeholder_size"
-        android:layout_height="@dimen/large_item_placeholder_size"
-        android:layout_centerInParent="true"
-        android:visibility="visible"
-        app:mli_initials="false"
-        app:mli_initials_number="1"
-        app:mli_letter="Z"
-        app:mli_letter_color="@color/letter_color"
-        app:mli_letter_size="@integer/large_item_placeholder_text_size"
-        app:mli_letters_number="1"
-        app:mli_shape_color="@color/colorWhite"
-        app:mli_shape_type="circle" />
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:layout_width="@dimen/large_item_placeholder_size"
+            android:layout_height="@dimen/large_item_placeholder_size"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:mli_initials="false"
+            app:mli_initials_number="1"
+            app:mli_letter="Z"
+            app:mli_letter_color="@color/letter_color"
+            app:mli_letter_size="@integer/large_item_placeholder_text_size"
+            app:mli_letters_number="1"
+            app:mli_shape_color="@color/colorWhite"
+            app:mli_shape_type="circle" />
 
-    <ImageView
-        android:id="@+id/item_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@color/colorWhite"
-        android:scaleType="fitCenter"
-        android:visibility="invisible"/>
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:scaleType="fitCenter"
+            android:visibility="invisible" />
+        <!-- app:imageUrl="@{imageInfo.filename}" -->
+    </RelativeLayout>
+</layout>

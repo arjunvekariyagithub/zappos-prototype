@@ -29,40 +29,4 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_dummy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_menu_cart"
-        android:visibility="invisible"
-        app:layout_behavior="com.zappos.android.app.prototype.views.ScrollingFABBehavior" />
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin">
-
-        <com.github.jorgecastilloprz.FABProgressCircle
-            android:id="@+id/fabProgressCircle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:arcColor="@color/add_to_cart_progress_arc"
-            app:arcWidth="@dimen/add_to_cart_progress_arc_width"
-            app:finalIcon="@drawable/ic_done"
-            app:reusable="true"
-            app:roundedStroke="true">
-
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/add_to_cart_progress_arc_width"
-                android:src="@drawable/ic_menu_cart"
-                app:layout_behavior="com.zappos.android.app.prototype.views.ScrollingFABBehavior" />
-        </com.github.jorgecastilloprz.FABProgressCircle>
-    </RelativeLayout>
-
 </android.support.design.widget.CoordinatorLayout>

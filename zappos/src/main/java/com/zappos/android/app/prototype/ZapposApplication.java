@@ -3,6 +3,7 @@ package com.zappos.android.app.prototype;
 import android.app.Application;
 import android.content.Context;
 
+import com.zappos.android.app.prototype.binding.CustomBindingAdapter;
 import com.zappos.android.app.prototype.utils.Utils;
 
 /**
@@ -13,13 +14,7 @@ import com.zappos.android.app.prototype.utils.Utils;
 public class ZapposApplication extends Application {
 
     private static ZapposApplication sInstance = null;
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        sInstance = this;
-        Utils.loadTypeFace(this, "Fenix-Regular.ttf");
-    }
+    private CustomBindingAdapter mCustomBindingAdapter = null;
 
     public static ZapposApplication getInstance() {
         return sInstance;
@@ -27,5 +22,17 @@ public class ZapposApplication extends Application {
 
     public static Context getAppContext() {
         return sInstance.getApplicationContext();
+    }
+
+    public static CustomBindingAdapter getCustomBindingAdapter() {
+        return sInstance.mCustomBindingAdapter;
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        sInstance = this;
+        mCustomBindingAdapter = new CustomBindingAdapter();
+        Utils.loadTypeFace(this, "Fenix-Regular.ttf");
     }
 }

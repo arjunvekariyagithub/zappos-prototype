@@ -5,12 +5,13 @@ import android.support.v7.widget.RecyclerView;
 
 /**
  * Created by arjun on 2/8/17.
- *
+ * <p>
  * Scroll listener for {@link RecyclerView}.
  */
 public class RecyclerViewScrollListener extends RecyclerView.OnScrollListener {
 
     public ScrollPositionListener mScrollPositionListener;
+
     public RecyclerViewScrollListener(ScrollPositionListener scrollPositionListener) {
         mScrollPositionListener = scrollPositionListener;
     }

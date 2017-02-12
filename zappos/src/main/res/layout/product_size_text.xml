@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="java.lang.String" />
+
+        <variable
+            name="size"
+            type="String" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/size_textView"
+            android:layout_width="@dimen/product_page_items_size_text_dimen"
+            android:layout_height="@dimen/product_page_items_size_text_dimen"
+            android:layout_alignEnd="@id/badge_icon_button"
+            android:layout_alignRight="@id/badge_icon_button"
+            android:layout_alignTop="@id/badge_icon_button"
+            android:layout_marginRight="@dimen/menu_cart_badge_text_margin_right"
+            android:layout_marginTop="@dimen/menu_cart_badge_text_margin_top"
+            android:background="@drawable/selector_product_size_text"
+            android:gravity="center"
+            android:text="@{size}"
+            android:textColor="@color/selector_text_color_product_size"
+            android:textSize="@dimen/large_item_title_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</layout>

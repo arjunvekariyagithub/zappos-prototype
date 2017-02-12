@@ -4,16 +4,15 @@ import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.FragmentManager;
-import android.view.MotionEvent;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 
 import com.github.jorgecastilloprz.FABProgressCircle;
 import com.zappos.android.app.prototype.R;
@@ -31,13 +30,10 @@ import butterknife.ButterKnife;
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private static final String TAG = HomeActivity.class.getSimpleName();
     public static final int GRID_VIEW = 100;
     public static final int LIST_VIEW = 101;
-
+    private static final String TAG = HomeActivity.class.getSimpleName();
     private Context mContext;
-    public FloatingActionButton mFAB;
-    public static FABProgressCircle mFABProgressCircle;
 
     private ProductListFragment mProductListFragment;
     private FragmentNotifier mFragmentNotifier;
@@ -66,8 +62,7 @@ public class HomeActivity extends AppCompatActivity
     }
 
     /**
-     *  initialize toolbar, navigation drawer and content fragment.
-     *
+     * initialize toolbar, navigation drawer and content fragment.
      */
     public void initView() {
         setContentView(R.layout.activity_home);
@@ -79,18 +74,6 @@ public class HomeActivity extends AppCompatActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content,
                 mProductListFragment).commitAllowingStateLoss();
-
-        mFAB = (FloatingActionButton) findViewById(R.id.fab);
-        mFABProgressCircle = (FABProgressCircle) findViewById(R.id.fabProgressCircle);
-
-        mFABProgressCircle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mFragmentNotifier != null) {
-                    mFragmentNotifier.notifyOnFABClick(mFABProgressCircle);
-                }
-            }
-        });
 
         setupDrawer(toolbar);
 
@@ -141,7 +124,6 @@ public class HomeActivity extends AppCompatActivity
      * framework to keep {@link android.support.v7.widget.RecyclerView} scrolling behaviour intact.
      *
      * @param ev touch events from framework side
-     *
      * @return return value from callback to framework
      */
     @Override
@@ -158,7 +140,6 @@ public class HomeActivity extends AppCompatActivity
     }
 
     /**
-     *
      * @param listener lister to notify {@link ProductListFragment} about click events on
      *                 {@link FloatingActionButton}
      */
@@ -183,7 +164,6 @@ public class HomeActivity extends AppCompatActivity
 
         /**
          * Notify {@link ProductListFragment} when {@link #onBackPressed()} is called.
-         *
          */
 
         boolean notifyOnBackPressed();

@@ -4,8 +4,9 @@ import com.google.gson.annotations.SerializedName;
 
 /**
  * Created by arjun on 2/1/17.
- *
+ * <p>
  * Model class representing individual product information.
+ *
  * @SerializedName is used by g-son for data serialization.
  */
 public class ProductInfo {
@@ -20,8 +21,6 @@ public class ProductInfo {
     private String originalPrice;
     @SerializedName("styleId")
     private String styleId;
-    @SerializedName("colorId")
-    private String colorId;
     @SerializedName("price")
     private String price;
     @SerializedName("percentOff")
@@ -32,14 +31,13 @@ public class ProductInfo {
     private String productName;
 
     public ProductInfo(String brandName, String thumbnailImageUrl, String productId,
-                 String originalPrice, String styleId, String colorId, String price,
-                 String percentOff, String productUrl, String productName) {
+                       String originalPrice, String styleId, String colorId, String price,
+                       String percentOff, String productUrl, String productName) {
         this.brandName = brandName;
         this.thumbnailImageUrl = thumbnailImageUrl;
         this.productId = productId;
         this.originalPrice = originalPrice;
         this.styleId = styleId;
-        this.colorId = colorId;
         this.price = price;
         this.percentOff = percentOff;
         this.productUrl = productUrl;
@@ -84,14 +82,6 @@ public class ProductInfo {
 
     public void setStyleId(String styleId) {
         this.styleId = styleId;
-    }
-
-    public String getColorId() {
-        return colorId;
-    }
-
-    public void setColorId(String colorId) {
-        this.colorId = colorId;
     }
 
     public String getPrice() {

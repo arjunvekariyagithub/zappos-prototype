@@ -3,11 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <import type="com.zappos.android.app.prototype.models.ProductInfo" />
+
         <import type="com.zappos.android.app.prototype.binding.CustomBindingAdapter" />
 
-        <variable name="product" type="ProductInfo" />
-        <variable name="bindingAdapter" type="CustomBindingAdapter" />
+        <variable
+            name="product"
+            type="ProductInfo" />
+
+        <variable
+            name="bindingAdapter"
+            type="CustomBindingAdapter" />
     </data>
 
     <RelativeLayout
@@ -104,7 +111,8 @@
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
                             android:layout_gravity="center"
-                            android:visibility="gone"/>
+                            android:background="@color/colorWhite"
+                            android:visibility="gone" />
 
                         <!--<RelativeLayout-->
                         <!--android:id="@+id/slider_layout"-->
@@ -160,7 +168,8 @@
                             android:layout_marginRight="@dimen/large_item_icon_fav_margin"
                             android:layout_marginTop="@dimen/large_item_icon_fav_margin"
                             android:checked="false"
-                            android:onClick="@{(theView) -> bindingAdapter.onFavouriteChanged(theView)}" />
+                            android:onClick="@{(theView) -> bindingAdapter.onFavouriteChanged(theView)}"
+                            android:visibility="invisible" />
                     </RelativeLayout>
                 </FrameLayout>
             </LinearLayout>

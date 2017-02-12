@@ -4,7 +4,7 @@ import android.os.Build;
 
 /**
  * Created by arjun on 2/1/17.
- *
+ * <p>
  * Support class to manages device and OS specific functionality
  */
 public class Support {

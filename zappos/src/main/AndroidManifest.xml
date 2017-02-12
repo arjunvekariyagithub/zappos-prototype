@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zappos.android.app.prototype">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".ZapposApplication"
@@ -14,16 +14,36 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity.HomeActivity"
-            android:label="@string/zappos"
-            android:uiOptions="none"
-            android:windowSoftInputMode="adjustResize"
             android:configChanges="orientation|uiMode|keyboardHidden|mcc|mnc|screenLayout|screenSize"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/zappos"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:uiOptions="none"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activity.ProductPageActivity"
+            android:configChanges="orientation|uiMode|keyboardHidden|mcc|mnc|screenLayout|screenSize"
+            android:label="@string/zappos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.ProductPage"
+            android:uiOptions="none">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.zappos.com"
+                    android:scheme="http" />
+            </intent-filter>
+
         </activity>
     </application>
 

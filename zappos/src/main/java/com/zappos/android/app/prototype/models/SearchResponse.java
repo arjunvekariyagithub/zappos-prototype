@@ -6,8 +6,9 @@ import java.util.List;
 
 /**
  * Created by arjun on 2/1/17.
- *
+ * <p>
  * Model class representing search {@link retrofit2.Response} from server side.
+ *
  * @SerializedName is used by g-son for data serialization.
  */
 public class SearchResponse {

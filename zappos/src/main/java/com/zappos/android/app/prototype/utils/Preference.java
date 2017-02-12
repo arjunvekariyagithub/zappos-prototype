@@ -7,16 +7,14 @@ import android.util.Log;
 
 /**
  * Created by arjun on 2/3/17.
- *
+ * <p>
  * Manages to load and save the states; view type, etc...
  */
 public class Preference {
-    private static final String TAG = "Preference";
-    private static final String APPPREFS = "ZapposSharedPreferences";
-
     public static final String IS_TABLET = "is_tablet";
     public static final String VIEW_TYPE = "view_type";
-
+    private static final String TAG = "Preference";
+    private static final String APPPREFS = "ZapposSharedPreferences";
     private static Context mContext;
     private static Preference mUniqueInstance = null;
     private int mode = Context.MODE_PRIVATE;
@@ -37,7 +35,7 @@ public class Preference {
      * save {@link Integer} value
      *
      * @param keyString key to save value for
-     * @param key updated value
+     * @param key       updated value
      */
     public void saveState(String keyString, int key) {
         try {
@@ -58,7 +56,7 @@ public class Preference {
      * save {@link String} value
      *
      * @param keyString key to save value for
-     * @param key updated value
+     * @param key       updated value
      */
     public void saveState(String keyString, String key) {
         try {
@@ -78,7 +76,7 @@ public class Preference {
      * save {@link Long} value
      *
      * @param keyString key to save value for
-     * @param key updated value
+     * @param key       updated value
      */
     public void saveState(String keyString, long key) {
         try {
@@ -100,7 +98,7 @@ public class Preference {
      * save {@link Boolean} value
      *
      * @param keyString key to save value for
-     * @param key updated value
+     * @param key       updated value
      */
     public void saveState(String keyString, boolean key) {
         try {
@@ -122,7 +120,6 @@ public class Preference {
      * load value for given key
      *
      * @param keyString key to load value for
-     *
      * @return value associated with given key
      */
     public String loadStringKey(String keyString) {
@@ -139,9 +136,8 @@ public class Preference {
     /**
      * load {@link Integer} value.
      *
-     * @param keyString key to load value for
+     * @param keyString   key to load value for
      * @param returnValue default return value if key does not found
-     *
      * @return value associated with given key
      */
     public int loadIntKey(String keyString, int returnValue) {
@@ -159,9 +155,8 @@ public class Preference {
     /**
      * load {@link Long} value.
      *
-     * @param keyString key to load value for
+     * @param keyString   key to load value for
      * @param returnValue default return value if key does not found
-     *
      * @return value associated with given key
      */
     public long loadLongKey(String keyString, long returnValue) {
@@ -177,9 +172,8 @@ public class Preference {
     /**
      * load {@link Boolean} value.
      *
-     * @param keyString key to load value for
+     * @param keyString   key to load value for
      * @param returnValue default return value if key does not found
-     *
      * @return value associated with given key
      */
     public boolean loadBooleanKey(String keyString, boolean returnValue) {
@@ -195,9 +189,8 @@ public class Preference {
     /**
      * load {@link String} value.
      *
-     * @param keyString key to load value for
+     * @param keyString   key to load value for
      * @param returnValue default return value if key does not found
-     *
      * @return value associated with given key
      */
     public String loadSettingsStringKey(String keyString, String returnValue) {

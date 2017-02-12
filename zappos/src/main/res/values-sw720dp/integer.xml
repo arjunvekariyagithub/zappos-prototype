@@ -4,5 +4,5 @@
     <integer name="large_view_column_count">2</integer>
 
     <integer name="icon_size_menu_item">16</integer>
-    
+
 </resources>

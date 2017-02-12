@@ -40,4 +40,12 @@
     <string name="share">Share</string>
     <string name="send">Send</string>
 
+    <!-- product page -->
+    <string name="heading_product_detail">Product Details</string>
+    <string name="heading_delivery_options">Delivery Options</string>
+    <string name="heading_size">Select Size</string>
+    <string name="heading_product_info">Product Info</string>
+    <string name="heading_product_colors">Colors (Styles)</string>
+    <string name="heading_product_recommend">Similar Recommended products</string>
+
 </resources>

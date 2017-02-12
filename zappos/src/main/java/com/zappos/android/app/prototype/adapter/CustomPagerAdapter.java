@@ -14,8 +14,9 @@ import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.zappos.android.app.prototype.R;
+import com.zappos.android.app.prototype.models.ImageInfo;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by arjun on 2/7/17.
@@ -25,17 +26,17 @@ public class CustomPagerAdapter extends PagerAdapter {
 
     Context mContext;
     LayoutInflater mLayoutInflater;
-    ArrayList<String> mImages = new ArrayList<String>();
+    List<ImageInfo> mProductImages;
 
-    public CustomPagerAdapter(Context context, ArrayList<String> images) {
+    public CustomPagerAdapter(Context context, List<ImageInfo> productImages) {
         mContext = context;
         mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        mImages = images;
+        mProductImages = productImages;
     }
 
     @Override
     public int getCount() {
-        return mImages.size();
+        return mProductImages.size();
     }
 
     @Override
@@ -45,7 +46,15 @@ public class CustomPagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        View itemView = mLayoutInflater.inflate(R.layout.view_pager_item_slideshow, container, false);
+        View itemView = LayoutInflater.from(container.getContext()).
+                inflate(R.layout.view_pager_item_slideshow, container, false);
+
+        //ViewDataBinding binding = DataBindingUtil.bind(itemView);
+//
+//        ImageInfo style = mProductImages.get(position);
+//        Log.d("Zappos", "ViewPager - instantiateItem(): " + style.getFilename());
+//        binding.setVariable(BR.imageInfo, style);
+//        binding.executePendingBindings();
 
         final ImageView imageView = (ImageView) itemView.findViewById(R.id.item_image);
 
@@ -53,7 +62,7 @@ public class CustomPagerAdapter extends PagerAdapter {
          * Using Glide to handle image loading.
          */
 
-        Glide.with(imageView.getContext()).load(mImages.get(position))
+        Glide.with(imageView.getContext()).load(mProductImages.get(position).getFilename())
                 .listener(new RequestListener<String, GlideDrawable>() {
                     @Override
                     public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {

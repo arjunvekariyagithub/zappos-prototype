@@ -1,9 +1,19 @@
 <resources>
 
     <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:checkboxStyle">@style/CheckBox</item>
         <item name="android:textViewStyle">@style/MonoSpaceTextViewStyle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.ProductPage">
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="colorPrimary">@color/colorPrimaryProductPage</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccentProductPage</item>
+        <item name="android:textViewStyle">@style/SanSerifTextViewStyle</item>
     </style>
 </resources>

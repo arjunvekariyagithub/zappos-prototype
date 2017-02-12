@@ -6,7 +6,15 @@
     <color name="colorAccent">#FFA726</color>
     <color name="colorAccentSecondary">#FFF06292</color>
     <color name="colorAccentDark">#00B482</color>
+    <color name="colorAccentLight">#00BFA5</color>
     <color name="colorMenuButton">#FFB0BEC5</color>
+
+    <color name="colorPrimaryProductPage">#FFFFFF</color>
+    <color name="colorPrimaryDarkProductPage">#202020</color>
+    <color name="colorAccentProductPage">#00B482</color>
+    <color name="colorAccentSecondaryProductPage">#FFF06292</color>
+    <color name="colorAccentDarkProductPage">#00B482</color>
+    <color name="colorMenuButtonProductPage">#FF90A4AE</color>
 
     <!-- list item-->
     <color name="colorBlack">#555555</color>
@@ -22,6 +30,7 @@
     <color name="thumbnail_background">#CFD8DC</color>
     <color name="thumbnail_background_light">#FAFAFA</color>
     <color name="letter_color">#CFD8DC</color>
+    <color name="details_divider">#90A4AE</color>
 
     <!-- common -->
     <color name="transparent">#00000000</color>
@@ -31,7 +40,10 @@
     <color name="blue">#3366FF</color>
 
     <!-- cart -->
-    <color name="add_to_cart_progress_arc">#FFB74D</color>
+    <color name="add_to_cart_progress_arc">#1DE9B6</color>
     <color name="add_to_cart_button_txt">#D45113</color>
+
+    <color name="product_details_card_view_bg">#EEEEEE</color>
+    <color name="details_text_font">#455A64</color>
 
 </resources>

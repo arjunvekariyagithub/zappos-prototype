@@ -13,20 +13,22 @@ import android.widget.Toast;
 import com.zappos.android.app.prototype.R;
 import com.zappos.android.app.prototype.activity.HomeActivity;
 import com.zappos.android.app.prototype.adapter.ProductListAdapter;
+import com.zappos.android.app.prototype.models.ProductInfo;
 
 import java.util.concurrent.TimeoutException;
 
 /**
  * Created by arjun on 2/1/17.
- *
+ * <p>
  * Utility class for performing application level common operations.
- *
  */
 public class Utils {
 
     private static int currentViewType = HomeActivity.GRID_VIEW;
 
     private static Typeface fontFace;
+
+    private static ProductInfo currentProductInfo;
 
     public static void setCurrentViewType(int viewType) {
         currentViewType = viewType;
@@ -40,13 +42,20 @@ public class Utils {
         return currentViewType == HomeActivity.LIST_VIEW;
     }
 
+    public static ProductInfo getCurrentProductInfo() {
+        return currentProductInfo;
+    }
+
+    public static void setCurrentProductInfo(ProductInfo currentProductInfo) {
+        Utils.currentProductInfo = currentProductInfo;
+    }
+
     /**
      * Provides value for number of columns to be used for
      * {@link android.support.v7.widget.RecyclerView}
      *
      * @param context context
      * @param adapter list adapter
-     *
      * @return number of columns based on device type and orientation.
      */
     public static int getNoOfColumns(Context context, ProductListAdapter adapter) {
@@ -63,7 +72,6 @@ public class Utils {
      *
      * @param context context
      * @param adapter list adapter
-     *
      * @return number of columns
      */
     private static int calculateColumns(Context context, ProductListAdapter adapter) {
@@ -71,10 +79,10 @@ public class Utils {
         if (!isLandscape(context)) {
             if (isPhone(context)) return n;
             else return context.getResources().getInteger(
-                        R.integer.large_view_column_count);
+                    R.integer.large_view_column_count);
         }
         if (isTablet(context)) return context.getResources().getInteger(
-                    R.integer.large_view_column_count);
+                R.integer.large_view_column_count);
 
         if (isLandscape(context)) n = 3;
 
@@ -118,11 +126,12 @@ public class Utils {
      * in image url with 'p-4x'.
      *
      * @param smallThumbUrl url for small thumbnail
-     *
      * @return url for large thumbnail
      */
     public static String getLargeThumbUrl(String smallThumbUrl) {
-        if (smallThumbUrl.contains(Constants.THUMB_URL_SUFFIX_THUMBNAIL)) {
+        if (smallThumbUrl.contains(Constants.THUMB_URL_SUFFIX_4X)) {
+            return smallThumbUrl;
+        } else if (smallThumbUrl.contains(Constants.THUMB_URL_SUFFIX_THUMBNAIL)) {
             return smallThumbUrl.replace(Constants.THUMB_URL_SUFFIX_THUMBNAIL,
                     Constants.THUMB_URL_SUFFIX_4X);
         }
@@ -170,8 +179,8 @@ public class Utils {
 
     /**
      * API to decide device type, based on android OS resource selection functionality
-     * @param context
      *
+     * @param context
      * @return retrieved device type {@link String} from appropriate values/string.xml
      */
     public static String getDeviceType(Context context) {

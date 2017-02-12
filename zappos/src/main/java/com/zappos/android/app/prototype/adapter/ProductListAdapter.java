@@ -25,10 +25,9 @@ import java.util.List;
 
 /**
  * Created by arjun on 2/1/17.
- *
+ * <p>
  * Adapter for {@link RecyclerView}. Uses data-binding apis for binding data to
- *  {@link RecyclerView} items.
- *
+ * {@link RecyclerView} items.
  */
 public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.ProductInfoBindingHolder> {
     private static final String TAG = ProductListAdapter.class.getSimpleName();
@@ -36,18 +35,22 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
     private Context mContext;
     private RelativeLayout mLayoutForColumnWidth;
     private HashSet<Integer> mFavoriteList = new HashSet<Integer>();
+    private boolean mIsSimilarProductsView = false;
 
-    public ProductListAdapter(List<ProductInfo> products, Context context) {
+    public ProductListAdapter(List<ProductInfo> products, Context context,
+                              boolean isSimilarProductsView) {
         this.mProductsList = products;
         this.mContext = context;
+        this.mIsSimilarProductsView = isSimilarProductsView;
     }
 
     /**
-     *
      * @return appropriate list item layout based on current view mode
      */
     private int getRowLayout() {
-
+        if (mIsSimilarProductsView) {
+            return R.layout.row_recommendation;
+        }
         if (Utils.isLandscape(mContext) || Utils.isGridView()) {
             return R.layout.row_gridview;
         } else {
@@ -72,7 +75,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
      * Called for binding data to particular list item.
      * Uses {@link DataBindingUtil} apis for automatic data binding
      *
-     * @param holder view holder for list item
+     * @param holder   view holder for list item
      * @param position position of list item to which data is to be bound
      */
 
@@ -81,7 +84,22 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
         ProductInfo product = mProductsList.get(position);
         holder.getBinding().setVariable(BR.product, product);
         holder.getBinding().executePendingBindings();
-        handleFavourite(holder, position);
+        if (mIsSimilarProductsView) {
+            View leftMargin = holder.itemView.findViewById(R.id.margin_layout_left);
+            View rightMargin = holder.itemView.findViewById(R.id.margin_layout_right);
+            if (position == 0) {
+                leftMargin.setVisibility(View.VISIBLE);
+                rightMargin.setVisibility(View.GONE);
+            } else if (position == mProductsList.size() - 1) {
+                rightMargin.setVisibility(View.VISIBLE);
+                leftMargin.setVisibility(View.GONE);
+            } else {
+                rightMargin.setVisibility(View.GONE);
+                leftMargin.setVisibility(View.GONE);
+            }
+        } else {
+            handleFavourite(holder, position);
+        }
     }
 
     @Override
@@ -100,11 +118,11 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
      * Update state of favourite {@link CheckBox} based on prior user selection
      * Uses list item position to keep track of user selection.
      *
-     * @param holder view holder for list item
+     * @param holder   view holder for list item
      * @param position position of list item to which data is to be bound
      */
 
-    public void handleFavourite (ProductInfoBindingHolder holder, final int position) {
+    public void handleFavourite(ProductInfoBindingHolder holder, final int position) {
         CheckBox cb = (CheckBox) holder.itemView.findViewById(R.id.fav_button);
         cb.setTag(position);
         cb.setChecked(mFavoriteList.contains((Integer) cb.getTag()));
@@ -142,7 +160,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
     }
 
     /**
-     *  View holder class for {@link RecyclerView} items.
+     * View holder class for {@link RecyclerView} items.
      */
 
     public static class ProductInfoBindingHolder extends RecyclerView.ViewHolder {

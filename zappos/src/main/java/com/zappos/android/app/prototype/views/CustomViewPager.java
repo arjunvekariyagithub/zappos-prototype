@@ -9,7 +9,7 @@ import android.view.MotionEvent;
  * Created by arjun on 2/7/17.
  */
 
-public class CustomViewPager extends ViewPager{
+public class CustomViewPager extends ViewPager {
 
     public CustomViewPager(Context context) {
         super(context);

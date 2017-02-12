@@ -1,0 +1,57 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.zappos.android.app.prototype.models.ProductInfo" />
+
+        <import type="com.zappos.android.app.prototype.binding.CustomBindingAdapter" />
+
+        <variable
+            name="product"
+            type="ProductInfo" />
+
+        <variable
+            name="bindingAdapter"
+            type="CustomBindingAdapter" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/product_page_recommendation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/product_page_items_margin_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/details_divider"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/product_page_items_margin_left_right"
+            android:layout_marginTop="@dimen/product_page_items_margin_left_right"
+            android:text="@string/heading_product_recommend"
+            android:textColor="@color/details_text_font"
+            android:textSize="@dimen/large_item_title_text_size"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_recommend_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_heading"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/product_page_items_margin_top"
+            android:nestedScrollingEnabled="false"
+            android:scrollbars="none"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</layout>

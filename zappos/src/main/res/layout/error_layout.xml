@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-       xmlns:tools="http://schemas.android.com/tools"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/error_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:layout_centerInParent="true"
         android:visibility="gone"
         tools:visibility="visible">
 
@@ -18,7 +18,7 @@
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/error_msg"/>
+            android:text="@string/error_msg" />
 
         <TextView
             android:id="@+id/error_txt_cause"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/activity_margin_quarter"
-            tools:text="@string/error_msg_timeout"/>
+            tools:text="@string/error_msg_timeout" />
 
         <Button
             android:id="@+id/error_btn_retry"
@@ -37,7 +37,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/activity_margin_content"
             android:text="@string/btn_retry"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary" />
 
     </LinearLayout>
 

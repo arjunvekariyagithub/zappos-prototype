@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.1.1_2f64227d65e8dd6df4f187084ed224acaea5ef02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -52,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e25dd9fb660b6cfc7998400b5e10e83a770f71f8">
+        sha1="7971a35826509dd52a854e7baaf7f28b6c8b76dd">
         <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0aa83158a6898486f784b58b40d6e2288fe00dfb/classes.dex" />
     </item>
     <item
@@ -174,15 +183,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.daimajia.slider/library/1.1.5/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
-        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/com.daimajia.slider-library-1.1.5_df8639d33f8321d621c65b8b039c9143866aca50/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/transition/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -196,7 +196,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="497e86b54c60dc5437b40f49e24d6c621286ada2">
+        sha1="91c8aac6c8d6a00f1f51a22b4dc6edf565340c67">
         <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_37bc8b5ddbabd74dcff59a9ec98edf996af54754/classes.dex" />
     </item>
     <item
@@ -237,6 +237,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/2.2.3/b4b51d1925cdfda98fd861230c1ecb5855500129/baseLibrary-2.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/baseLibrary-2.2.3_6112b3cd6f7bb7a196aee0a30c08c2c3a385d4d7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -255,21 +264,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.3/1499b854ae9f370409792db5af1b552dc7d9682f/jackson-core-2.7.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1499b854ae9f370409792db5af1b552dc7d9682f">
+        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.7.3_5f6458e0385fe798aac9a60e031daa69735dfc26/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/millpc/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
         <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/library-2.4.0_1bb74ca75883e99f5d18b2c07bddee392c197581/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/millpc/Documents/Arjun/Softwares/Development-Tools/Android-Studio/android-studio/gradle/m2repository/com/android/databinding/baseLibrary/2.2.3/baseLibrary-2.2.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
-        <dex dex="/home/millpc/Documents/Arjun/Study/Projects/AndroidStudioProjects/ILoveZappos/zappos/build/intermediates/transforms/dex/debug/folders/1000/10/baseLibrary-2.2.3_6d21df2fade4e17c849fc694440cf2deff86f151/classes.dex" />
     </item>
 
 </items>

@@ -3,11 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <import type="com.zappos.android.app.prototype.models.ProductInfo" />
+
         <import type="com.zappos.android.app.prototype.binding.CustomBindingAdapter" />
 
-        <variable name="product" type="ProductInfo" />
-        <variable name="bindingAdapter" type="CustomBindingAdapter" />
+        <variable
+            name="product"
+            type="ProductInfo" />
+
+        <variable
+            name="bindingAdapter"
+            type="CustomBindingAdapter" />
     </data>
 
     <RelativeLayout
@@ -53,10 +60,10 @@
                             android:layout_margin="1px">
 
                             <!--<ProgressBar-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:layout_centerInParent="true"-->
-                                <!--android:visibility="visible" />-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_centerInParent="true"-->
+                            <!--android:visibility="visible" />-->
 
                             <com.github.ivbaranov.mli.MaterialLetterIcon
                                 android:id="@+id/placeholder_bg"
@@ -110,7 +117,8 @@
                                 android:layout_marginTop="@dimen/grid_view_icon_fav_margin"
                                 android:checked="false"
                                 android:clickable="true"
-                                android:onClick="@{(theView) -> bindingAdapter.onFavouriteChanged(theView)}" />
+                                android:onClick="@{(theView) -> bindingAdapter.onFavouriteChanged(theView)}"
+                                android:visibility="invisible" />
                         </RelativeLayout>
                     </FrameLayout>
                 </LinearLayout>

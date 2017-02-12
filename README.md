@@ -1,6 +1,9 @@
 # ILoveZappos
 Android shopping application demo for zappos.com
 
+###Requires Android version 5.0 or above. 
+Since this is demo app, backward compatibility is not implemented.
+
 ## Click below to watch Demo on YouTube 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Gf8t439rWEA" target="_blank">

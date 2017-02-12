@@ -46,6 +46,8 @@ public class CustomBindingAdapter {
      */
     @BindingAdapter("bind:imageUrl")
     public static void loadImage(final ImageView imageView, String url) {
+        if (url == null) return;
+
         String largeThumbUrl = Utils.getLargeThumbUrl(url);
         if (largeThumbUrl == null || largeThumbUrl.isEmpty()) {
             imageView.setVisibility(View.GONE);
@@ -79,6 +81,9 @@ public class CustomBindingAdapter {
      */
     @BindingAdapter("bind:visibilityOnPercentOff")
     public static void setPriceTextVisibility(TextView textView, String percentOff) {
+        if (percentOff == null) {
+            return;
+        }
         if (percentOff.equals(Constants.TEXT_ZERO_PERCENT)) {
             textView.setVisibility(View.INVISIBLE);
         } else {
@@ -98,6 +103,9 @@ public class CustomBindingAdapter {
 
     @BindingAdapter({"bind:originalPrice", "bind:visibilityOnPercentOff"})
     public static void handleOriginalPriceText(TextView textView, String originalPrice, String percentOff) {
+        if (percentOff == null || originalPrice == null) {
+            return;
+        }
         if (percentOff.equals(Constants.TEXT_ZERO_PERCENT)) {
             textView.setVisibility(View.INVISIBLE);
         } else {

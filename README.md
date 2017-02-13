@@ -4,7 +4,7 @@ Android shopping application demo for zappos.com
 ###Requires Android version 5.0 or above. 
 Since this is demo app, backward compatibility is not implemented.
 
-#Demo
+#Demo (Click [here] (screenshots) to see HD screenshots)
 ###1. Search products
 ![Search products](https://raw.githubusercontent.com/arjunvekariyagithub/ILoveZappos/master/screenshots/gifs/search.gif)
 ###2. List all serached products

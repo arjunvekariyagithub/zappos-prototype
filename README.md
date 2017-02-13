@@ -7,7 +7,7 @@ Since this is demo app, backward compatibility is not implemented.
 #Demo
 ###1. Search products
 ![Search products](https://raw.githubusercontent.com/arjunvekariyagithub/ILoveZappos/master/screenshots/gifs/search.gif)
-###2. List all serached products 
+###2. List all serached products
 ![List serached products](https://raw.githubusercontent.com/arjunvekariyagithub/ILoveZappos/master/screenshots/gifs/grid_list_view.gif)
 ###3.Product page
 ![Product page](https://raw.githubusercontent.com/arjunvekariyagithub/ILoveZappos/master/screenshots/gifs/product_page.gif)
@@ -19,4 +19,4 @@ Since this is demo app, backward compatibility is not implemented.
 ![Config changes](https://raw.githubusercontent.com/arjunvekariyagithub/ILoveZappos/master/screenshots/gifs/config_chnages.gif)
 ###7. Navigation drawer
 <img src="https://raw.githubusercontent.com/arjunvekariyagithub/ILoveZappos/master/screenshots/navigation_drawer.png"
-alt="Navigation drawer" width="300" height="480" border="10" /></a>
+alt="Navigation drawer" width="300" height="540" border="10" /></a>

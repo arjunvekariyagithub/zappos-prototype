@@ -1,10 +1,15 @@
 # ILoveZappos
 Android shopping application demo for zappos.com
 
-###Requires Android version 5.0 or above. 
-Since this is demo app, backward compatibility is not implemented.
+###Requires Android version 5.0 or above.
+(Since this is a demo app, backward compatibility is not implemented)
 
-#Demo (Click [here] (screenshots) to see HD screenshots)
+<br>
+This app. uses well known libraries, [Retrofit](https://square.github.io/retrofit/) as HTTP client and [Glide](https://github.com/bumptech/glide) for image downloaiding and display. I have experimented with other Image loading libraries: [Picasso](http://square.github.io/picasso/), [Volly](https://github.com/google/volley) and [Fresco](https://github.com/facebook/fresco), but GLide seems to be performing best amongst all due to it's well optimized Cache mechanism. Since default type 'THUMBNAIL' images are too small, I have used type 'PAIR' images with '4x' resolution to enhance user experience. Detailed explaination about implementation has been provided inside source code. Used [databinding](https://developer.android.com/topic/libraries/data-binding/index.html) for efficient data loading and save number of lines of code. Designed with [Meterial design guideline](https://material.io/guidelines/) to provide elegant user interface. 
+
+<br>
+
+##Demo (Click [here] (screenshots) to see HD screenshots)
 ###1. Search products
 ![Search products](https://raw.githubusercontent.com/arjunvekariyagithub/ILoveZappos/master/screenshots/gifs/search.gif)
 ###2. List all serached products

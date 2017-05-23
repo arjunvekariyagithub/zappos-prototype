@@ -1,4 +1,4 @@
-# ILoveZappos
+# Zappos
 Android shopping application demo for zappos.com
 
 ### Requires Android version 5.0 or above.
